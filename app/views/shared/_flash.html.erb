@@ -1,0 +1,7 @@
+<div class="max-w-7xl mx-auto relative flex flex-col items-end space-y-4">
+  <div class="fixed max-w-md w-full z-40">
+    <% flash.each do |type, message| %>
+      <%= render FlashComponent.new(type: type, message: message) %>
+    <% end %>
+  </div>
+</div>

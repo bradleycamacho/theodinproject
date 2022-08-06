@@ -1,0 +1,21 @@
+<div class="rounded-lg p-4 mb-4 <%= color_classes[:bg] %>" data-controller="flash" data-test-id='flash'>
+  <div class="flex items-center">
+    <div class="flex-shrink-0">
+       <%= inline_svg_tag icon_path, class: "h-8 w-8 #{color_classes[:icon]}", aria: true, title: 'Icon', desc: "#{type} icon" %>
+    </div>
+    <div class="ml-3">
+      <div class="flex flex-col">
+        <strong class="font-semibold text-gray-800"><%= title %></strong>
+        <span class="text-sm text-gray-800 font-medium"><%= message %></span>
+      </div>
+    </div>
+    <div class="ml-auto pl-10">
+      <div class="-mx-1.5 -my-1.5">
+        <button type="button" class="inline-fle rounded-md p-1.5 focus:outline-none focus:ring-2 focus:ring-offset-2 <%= color_classes[:button] %>" data-action="click->flash#dismiss">
+          <span class="sr-only">Dismiss</span>
+          <%= inline_svg_tag "icons/x.svg", class: "h-5 w-5", aria: true, title: 'Dismiss icon', desc: 'Dismiss button icon' %>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
