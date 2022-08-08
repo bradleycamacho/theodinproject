@@ -400,7 +400,7 @@ GEM
       execjs
       railties (>= 3.2)
       tilt
-    redis (4.6.0)
+    redis (4.7.1)
     regexp_parser (2.5.0)
     require_all (3.0.0)
     responders (3.0.1)
@@ -478,8 +478,8 @@ GEM
       concurrent-ruby (~> 1.0, >= 1.0.2)
     sentry-ruby-core (5.3.1)
       concurrent-ruby
-    sentry-sidekiq (5.3.1)
-      sentry-ruby-core (~> 5.3.1)
+    sentry-sidekiq (5.4.1)
+      sentry-ruby (~> 5.4.1)
       sidekiq (>= 3.0)
     shakapacker (6.5.0)
       activesupport (>= 5.2)
@@ -598,7 +598,7 @@ DEPENDENCIES
   seed-fu (~> 2.3)
   sentry-rails (~> 5.3)
   sentry-ruby (~> 5.4)
-  sentry-sidekiq (~> 5.3)
+  sentry-sidekiq (~> 5.4)
   shakapacker (= 6.5.0)
   shoulda-matchers (~> 5.1)
   sidekiq (~> 6.5)
